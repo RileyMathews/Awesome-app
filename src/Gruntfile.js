@@ -19,6 +19,13 @@ module.exports = function (grunt) {
                 "./scripts/**/*.js",
                 "!node_modules/**/*.js"
             ]
+        },
+        browserify: {
+            dist: {
+                files: {
+                    "../dist/bundle.js": ["scripts/**/*.js"]
+                }
+            }
         }
     });
     // Load the plugin that provides the "uglify" task.
