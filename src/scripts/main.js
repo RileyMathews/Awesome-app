@@ -1,3 +1,8 @@
+
+
+
+const DomBuilder = require("./DomBuilder")
+
 const output = document.querySelector("#output")
 
 const fragment = document.createDocumentFragment()
@@ -50,5 +55,5 @@ fragment.appendChild(createCardButton)
 // create card component
 
 
-
-output.appendChild(fragment)
+DomBuilder(fragment, "#output")
+//output.appendChild(fragment)
