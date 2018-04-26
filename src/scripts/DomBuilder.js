@@ -1,5 +1,5 @@
 const DomBuilder = (what, where) => {
-    const output = document.querySelectir(where).appendChild(what)
+    document.querySelector(where).appendChild(what)
 }
 
 module.exports = DomBuilder
